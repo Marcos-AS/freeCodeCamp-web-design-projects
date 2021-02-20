@@ -1,0 +1,2 @@
+que la parte de marcos y de hola mundo ocupen toda la pantalla
+que al achicar la pantalla el navbar no tape mi nombre y que ocupe toda la pantalla

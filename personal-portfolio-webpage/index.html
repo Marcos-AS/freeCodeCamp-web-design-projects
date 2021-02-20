@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<!-- #Content
+
+    1. My portfolio should have a Welcome section with an id of "welcome-section".
+    2. The welcome section should have an h1 element that contains text.
+    3. My portfolio should have a projects section with an id of "projects".
+    4. The projects section should contain at least one element with a class of "project-tile" to hold a project.
+    5. The projects section should contain at least one link to a project.
+    6. My portfolio should have a navbar with an id of "navbar".
+    7. The navbar should contain at least one link that I can click on to navigate to different sections of the page.1032ms
+    8. My portfolio should have a link with an id of "profile-link", which opens my GitHub or FCC profile in a new tab.
+
+#Layout
+
+    1. My portfolio should have at least one media query.
+    2. The height of the welcome section should be equal to the height of the viewport.
+    3. The navbar should always be at the top of the viewport. -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>freeCodeCamp: Personal Portfolio Webpage </title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!--barra navegación-->
+    <nav id="navbar">
+        <a href="#welcome-section" class="nav-links">Bienvenida</a>
+        <a href="#projects" class="nav-links">Proyectos</a>
+        <a href="#perfiles" class="nav-links">Mi presencia en Internet</a>
+    </nav>
+
+    <!--mi nombre-->
+    <header id="nombre">
+        <h2>
+        Marcos
+        </h2>
+    </header>
+
+<!--título bienvenida-->
+    <section id="welcome-section">
+        <h1>Hola mundo! Esta es mi página</h1>
+    </section>
+
+<!--SECCIÓN PROYECTOS-->
+<h2 class="title"> Estos son algunos de mis proyectos </h2>
+<section id="projects">
+        <div class="project-and-link">
+            
+            <img class="imagen-proyecto" src="https://raw.githubusercontent.com/Marcos-AS/fcc-rwd-projects/main/personal-portfolio-webpage/technical-doc-page.jpg">
+            <figcaption>
+                <a class="project-tile" href="https://codepen.io/marcossantangelo/full/GRjyOZq" target="_blank">
+                    Technical Documentation Page</a>
+                </figcaption>
+        </div>
+            
+        <div class="project-and-link"> 
+            <img class="imagen-proyecto" src="https://raw.githubusercontent.com/Marcos-AS/fcc-rwd-projects/main/personal-portfolio-webpage/product-landing-page.jpg">
+            <figcaption>
+                <a class="project-tile" href="https://codepen.io/Marcos-AS/full/RwWWWMo" target="_blank"> Product Landing Page </a>
+            </figcaption>
+        </div>
+                
+        <div class="project-and-link">
+            <img class="imagen-proyecto" src="https://raw.githubusercontent.com/Marcos-AS/fcc-rwd-projects/main/personal-portfolio-webpage/survey-form.jpg">
+            <figcaption>
+                <a class="project-tile" href="https://codepen.io/Marcos-AS/full/mdedKoW" target="_blank"> Survey Form </a>
+            </figcaption>
+        </div>
+            
+        <div class="project-and-link">
+            <img class="imagen-proyecto" src="https://raw.githubusercontent.com/Marcos-AS/fcc-rwd-projects/main/personal-portfolio-webpage/tribute-page.jpg">
+            <figcaption>
+                <a class="project-tile" href="https://codepen.io/Marcos-AS/full/zYOaKBM" target="_blank"> Tribute Page </a>
+            </figcaption>
+        </div>
+    </section>
+
+<!--links de contacto-->
+    <section id="perfiles">
+        <h2 class="title">Me podés encontrar en los siguientes sitios</h2>
+        <a id="profile-link" href="https://www.freecodecamp.org/marcos-as" target="_blank">
+            Mi perfil FreeCodeCamp
+        </a>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

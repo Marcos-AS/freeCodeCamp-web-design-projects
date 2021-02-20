@@ -1,0 +1,146 @@
+body {
+    background-color: lightsalmon;
+    overflow-x: hidden;
+}
+
+/* -------------------------- MEDIA QUERIES ------------------------------------ */
+@media (max-width: 800px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .project-and-link {
+        flex: 200px;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        background-color: lavenderblush;
+
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    #header {
+        top: 10rem;
+    }
+}
+
+@media (min-width: 801px) {
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        padding: 1.3rem;      /*padding del borde*/
+        background-color: lavenderblush;
+        z-index: 1;
+    }
+}
+
+/* -------------------------------         nav   ------------------------------------------------    */ 
+
+.nav-links {
+    text-decoration: none;
+    color: #5F4B6E;
+    padding: 1.5rem;    /*tienen padding entre ellos*/
+    font-size: 1.5rem;
+}
+
+/* --------------------------------------       header nombre ----------------------------------        */
+#nombre {
+    width: 100vw;
+    position: relative;
+    top: 4rem;
+    background-color: indianred;
+    border: 1px solid black;
+}
+
+#nombre h2 {
+    text-align: center;
+}
+
+/* ------------------------------------- BIENVENIDA  -----------------------------------------------------*/
+#welcome-section {
+    position: relative;
+    top: 4rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+/* -------------------- PROYECTOS ---------------------------- */
+.title {
+    color: white;
+    border: 1px solid black;
+    box-shadow: 3px 10px 20px rgba(0,0,0,0.2);
+    position: relative;
+    top: 2rem;
+}
+
+#projects {
+    width: 100vw;
+    display: grid;
+    grid-template: auto auto / auto auto;
+}
+
+.project-tile {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+} 
+
+.imagen-proyecto {
+    width: 600px;
+    border: 1px solid black;
+}
+
+.project-and-link {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* ----------------------------------------     perfiles  -------------------------------------      */
+#perfiles a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+
+/* --------------------------------- PSEUDO CLASSES ------------------------------------------------- */
+a:hover {
+    color: #5F4B6E;
+}
+
+a:active {
+    color: #001b12;
+}
+
+a:visited {
+    color: #000062;
+}
+
+/* ----------------------------------GENERAL------------------------------------ */
+h1 {
+    font-size: calc(3rem + 1vw);
+}
+
+h2 {
+    font-size: calc(2.5rem + 1vw);
+}

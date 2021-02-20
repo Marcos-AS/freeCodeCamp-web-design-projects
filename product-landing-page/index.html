@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>freeCodeCamp: Product Landing Page</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="container">
+  <header id="header">
+    <h2 class="titles-font" id="header-title"> Tienda oficial Apple Argentina </h2>
+    <!--barra navegación-->
+    <nav id="nav-bar">
+      <a class="nav-link" href="#video"> Presentación </a>
+      <a class="nav-link" href="#precios" id="nav"> Precios </a>
+      <a class="nav-link" href="#footer"> Contacto </a>
+    </nav>
+    <!--logo-->
+    <a href="https://www.apple.com/">
+      <img id="header-img" src="https://raw.githubusercontent.com/Marcos-AS/fcc-rwd-projects/main/product-landing-page/Apple-Logo-Arcoiris.jpg" alt="Logo de Apple">
+    </a>
+  </header>
+  
+  <main>
+    <!--titulos bajo el header-->
+    <h1 class="titles-font"> Iphone 11</h1>
+    
+    <section id="caracteristicas">
+      <ul>
+        <li> Cámara excelente </li>
+        <li> Gran duración de batería </li>
+        <li> Hermosa pantalla </li>
+      </ul>
+    </section>
+      
+    <!--imagen-->
+    <img src="https://raw.githubusercontent.com/Marcos-AS/fcc-rwd-projects/main/product-landing-page/iphones-distintos-colores.jpg" alt="Iphone 11 en diferentes colores.">
+    
+      <!--VIDEO-->
+      <article>
+        <iframe id="video" width="700" height="400" src="https://www.youtube.com/embed/IPvSAtAsMM4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </article>
+      <hr>
+
+      <!--cuadrados mostrando los precios-->
+      <section id="precios">
+
+        <div id="64" class="cuadrados">
+          <h1> iPhone 11 64 GB </h1>
+          <h2> $168.000 </h2>
+          <p> Dual SIM Gris espacial 4 GB RAM </p>
+        </div>
+
+        <div id="256" class="cuadrados">
+          <h1> iPhone 11 256 GB </h1>
+          <h2> $ 189.000 </h2>
+          <p> Dual SIM Gris espacial 4 GB RAM </p>
+        </div>
+
+        <div id="512" class="cuadrados">
+          <h1> iPhone 11 512 GB </h1>
+          <h2> $ 220.847 </h2>
+          <p> Gris espacial 4 GB RAM Dual SIM </p>
+        </div>
+
+      </section>
+
+      <hr>
+
+      <!--input y boton-->
+    <section id="form-container">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST" target="_blank">
+        <input id="email" name="email" type="email" placeholder="Ingrese su email aquí" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+        <input type="submit" id="submit" value="Haga click aquí y nos contactaremos en breve.">
+      </form>
+    </section>
+
+  </main>
+
+  <!--barra de abajo-->
+  <footer id="footer">
+    <a> Contacto </a>
+    <a> Copyright </a>
+    <a href="#header-title"> Ir al inicio </a>
+  </footer>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>

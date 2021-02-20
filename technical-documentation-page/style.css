@@ -1,0 +1,129 @@
+/* ----------- Celulares ----------- */
+@media (max-width: 815px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    #navbar {
+      top: 0;
+      width: 100vw;
+      border: 2px solid green;
+      height: fit-content;
+      text-align: center;
+    }
+  
+    #main-doc {
+      top: calc(26rem + 3vw);
+    }
+  }
+  
+  /* --------------------------------------------------------------- */
+  /* --------------------------------------------------------------- */
+  
+  html,
+  body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+    line-height: calc(1rem + 0.5vw);
+    color: #1c273b;
+    min-width: 290px;
+  }
+  
+  /* ------------------------ NAVBAR -------------------------------- */
+  /* --------------HEADER ES TODOS LOS TITULOS ------------------------ */
+  header {
+    font-size: calc(1rem + 1vw);
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 815px) {
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 15rem;
+      height: 100vh;
+      min-width: 14rem;
+      border-right: 0.35rem solid #99a1a1;
+    }
+  
+    #main-doc {
+      position: absolute;
+      margin-left: calc(16.7rem + 0.5vw);
+      margin-bottom: 10vw;
+      padding: 1.5rem;
+    }
+  }
+  
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 1rem;
+  }
+  
+  #navbar ul {
+    overflow-x: hidden;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    height: 100%;
+  }
+  
+  #navbar li {
+    border-top: 1px solid;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* ----------------------- CUERPO ----------------------------------- */
+  
+  .main-section article {
+    margin: 1rem;
+  }
+  
+  /* ------------------------- TABLE ---------------------------------- */
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    padding: 1rem;
+    border-collapse: collapse;
+  }
+  
+  /* --------------------------- CODE ------------------------------------ */
+  .code div {
+    background-color: black;
+    color: white;
+  }
+  
+  .code-comentario-largo {
+    color: chocolate;
+  }
+  
+  .code-comentario-una {
+    color: green;
+  }
+  
+  #code-if {
+    color: violet;
+  }
+  
+  .code-builtin {
+    color: royalblue;
+  }
+  
+  .code-tipo {
+    color: mediumspringgreen;
+  }
+  
+  .code-func {
+    color: khaki;
+  }
+  
+  .py-num {
+    color: palegreen;
+  }
+  

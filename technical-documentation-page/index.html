@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<!-- #Content
+
+    1. I can see a <main> element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
+    2. Within the #main-doc ( <main> ) element, I can see several <section> elements, each with a class of "main-section". There should be a minimum of 5.
+    3. The first element within each .main-section should be a <header> element which contains text that describes the topic of that section.
+    4. Each <section> element with the class of "main-section" should also have an id comprised of the <header> innerText contained within it, with underscores in place of spaces. The id may include special characters if there are special characters in the respective <header> innerText. (e.g. The <section> that contains the header, "JavaScript & Java", should have a corresponding id="JavaScript_&_Java").
+    5. The .main-section elements should contain at least 10 <p> elements total (not each).
+    6. The .main-section elements should contain at least 5 <code> elements total (not each).
+    7. The .main-section elements should contain at least 5 <li> items total (not each).
+    8. I can see a <nav> element with a corresponding id="navbar".
+    9. The navbar element should contain one <header> element which contains text that describes the topic of the technical documentation.
+    10. Additionally, the navbar should contain link (<a>) elements with the class of "nav-link". There should be one for every element with the class "main-section".
+    11. The <header> element in the navbar must come before any link (<a>) elements in the navbar.
+    12. Each element with the class of "nav-link" should contain text that corresponds to the <header> text within each <section> (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+    13. When I click on a navbar element, the page should navigate to the corresponding section of the "main-doc" element (e.g. If I click on a "nav-link" element that contains the text "Hello world", the page navigates to a <section> element that has that id and contains the corresponding <header>.
+
+#Layout
+
+    1. On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left half of the screen. It should always be visible to the user and should remain stationary. You may need to enlarge the viewport or zoom out to ensure the navbar doesn't scroll with the page content.
+    2. My Technical Documentation page should use at least one media query. -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp: Technical Documentation Page</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+          Documentación de Python
+        </header>
+        <ul>
+          <li><a class="nav-link" href="#Introducción">
+              Introducción
+            </a></li>
+          <li><a class="nav-link" href="#Los_datos_de_Python_son_objetos">
+              Los datos de Python son objetos
+            </a></li>
+          <li><a class="nav-link" href="#Tipos_de_objetos">Tipos de objetos</a></li>
+          <li><a class="nav-link" href="#Hola_mundo">Hola mundo</a></li>
+          <li><a class="nav-link" href="#Comentarios">Comentarios</a></li>
+          <li><a class="nav-link" href="#Variables">Variables</a></li>
+          <li><a class="nav-link" href="#Operadores">Operadores</a></li>
+        </ul>
+      </nav>
+      
+      <main id="main-doc">
+        <section class="main-section" id="Introducción">
+          <header>Introducción</header>
+          <article>
+            <p>Python es un lenguaje de programación potente y fácil de aprender. Tiene estructuras de datos de alto nivel eficientes y un simple
+              pero efectivo sistema de programación orientado a objetos. La elegante sintaxis de Python y su tipado dinámico, junto a su naturaleza
+              interpretada lo convierten en un lenguaje ideal para scripting y desarrollo rápido de aplicaciones en muchas áreas, para la mayoría de
+              plataformas.<br><br>
+              El intérprete de Python y la extensiva librería estándar se encuentran disponibles libremente en código fuente y forma binaria para
+              la mayoría de plataformas desde la Web de Python, <a href="https://www.python.org/" target="_blank">www.python.org</a>, y se pueden distribuir libremente. El mismo sitio contiene
+              distribuciones y direcciones a muchos módulos de Python de terceras partes, programas, herramientas y adicionalmente documentación.<br></p>
+            <p>El intérprete de Python es fácilmente extensible con funciones y tipos de datos implementados en C o C++ (o otros lenguajes que permitan
+              ser llamados desde C). Python también es apropiado como un lenguaje para extender aplicaciones modificables.</p>
+          </article>
+        </section>
+      
+        <section class="main-section" id="Los_datos_de_Python_son_objetos">
+          <header>Los datos de Python son objetos</header>
+          <article>
+            <p>Python sigue lo que llamamos modelo de objetos, ¿qué significa eso?<br>
+              Cada número, cadena, estructura de datos, función, clase, módulo, etc. existe en el intérprete de Python en su propia "caja",
+              que se conoce como un objeto de Python. Cada objeto tiene una identidad, un tipo y un valor. Por ejemplo, cuando escribe a = 42,
+              se crea un objeto entero con el valor 42.<br>
+              En Python, un objeto es un fragmento de datos que contiene al menos lo siguiente:
+            <ul>
+              <li>Un tipo que define lo que puede hacer</li>
+              <li>Una identificación única para distinguirlo de otros objetos</li>
+              <li>Un valor acorde con su tipo</li>
+              <li>Un recuento de referencia que rastrea la frecuencia con la que se usa este objeto</li>
+            </ul>
+            </p>
+          </article>
+        </section>
+      
+        <section class="main-section" id="Tipos_de_objetos">
+          <header>Tipos de objetos</header>
+          <article>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tipo</th>
+                  <th>¿Mutable?</th>
+                  <th>Ejemplos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Booleano</td>
+                  <td>bool</td>
+                  <td>no</td>
+                  <td><code>True, False</code></td>
+                </tr>
+                <tr>
+                  <td>Entero</td>
+                  <td>int</td>
+                  <td>no</td>
+                  <td><code>1, 10000, 5_400</code></td>
+                </tr>
+                <tr>
+                  <td>Punto flotante</td>
+                  <td>float</td>
+                  <td>no</td>
+                  <td><code>2.56, 3.1e5</code></td>
+                </tr>
+                <tr>
+                  <td>Complejo</td>
+                  <td>complex</td>
+                  <td>no</td>
+                  <td><code>3j, 5 + 9j</code></td>
+                </tr>
+                <tr>
+                  <td>Cadena de texto</td>
+                  <td>str</td>
+                  <td>no</td>
+                  <td><code>'abcd', "def", '''hola'''</code></td>
+                </tr>
+                <tr>
+                  <td>Lista</td>
+                  <td>list</td>
+                  <td>sí</td>
+                  <td><code>['abcd', 'def', 'hola']</code></td>
+                </tr>
+                <tr>
+                  <td>Tupla</td>
+                  <td>tuple</td>
+                  <td>no</td>
+                  <td><code>('abc', 'def', 1997, 2000)
+                      (1, 2, 3, 4, 5 )</code></td>
+                </tr>
+                <tr>
+                  <td>Bytes</td>
+                  <td>bytes</td>
+                  <td>no</td>
+                  <td><code>['abcd', 'def', 'hola']</code></td>
+                </tr>
+                <tr>
+                  <td>Lista</td>
+                  <td>list</td>
+                  <td>sí</td>
+                  <td><code>b'ab\xff'</code></td>
+                </tr>
+                <tr>
+                  <td>Array de Byte</td>
+                  <td>bytearray</td>
+                  <td>no</td>
+                  <td><code>bytearray(...)</code></td>
+                </tr>
+                <tr>
+                  <td>Conjunto</td>
+                  <td>set</td>
+                  <td>sí</td>
+                  <td><code>set([3, 5, 7])</code></td>
+                </tr>
+                <tr>
+                  <td>Conjunto congelado</td>
+                  <td>frozenset</td>
+                  <td>no</td>
+                  <td><code>frozenset(['Elsa', 'Otto'])</code></td>
+                </tr>
+                <tr>
+                  <td>Diccionario</td>
+                  <td>dict</td>
+                  <td>sí</td>
+                  <td><code>{'game': 'bingo', 'dog': 'dingo', 'drummer': 'Ringo'}</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+      
+        <section class="main-section" id="Hola_mundo">
+          <header>Hola mundo</header>
+          <article class="code">
+            <p>Para empezar con Python, abrí el IDLE y escribí tu primer "Hola mundo" con código Python:</p>
+            <div>
+      
+              <code><span class="code-func">print</span>(<span class="code-comentario-largo">"Hola mundo"</span>)</code>
+            </div>
+            <p>Presiona enter para que aparezca en la consola tu código!</p>
+          </article>
+        </section>
+      
+        <section class="main-section" id="Comentarios">
+          <header>Comentarios</header>
+          <article class="code">
+            <p>
+              Para escribir un comentario en Python y así poder entender nuestro propio código y permitir que los demás también lo entiendan,
+              se puede escribir un # antes del comentario si este es de una sola línea, o """ si el comentario es de más líneas de extensión:
+            </p>
+            <div>
+      
+              <code> <span class="code-comentario-una">
+                  #este es un comentario corto, de una sola línea <br> </span>
+                <span class="code-comentario-largo">
+      
+                  """este es <br>
+                  un comentario <br>
+                  largo"""
+                </span>
+              </code>
+            </div>
+          </article>
+        </section>
+      
+        <section class="main-section" id="Variables">
+          <header>Variables</header>
+          <article class="code">
+            <p>Las variables son creadas cuando se les asigna un valor por primera vez, en realidad Python le da la referencia del valor a la
+              variable. Se pueden asignar valores o el mismo valor a múltiples variables en una línea.</p>
+            <div>
+      
+              <code>
+                <span class="code-comentario-una">
+      
+                  #defino una variable <br>
+                </span>
+                variable0 = <span class="py-num">10</span> <br>
+                <span class="code-comentario-una">
+      
+                  #asigno valores a múltiples variables en una sola definición <br>
+                </span>
+                variable1, variable2 = <span class="code-comentario-largo">"bananas"</span>, <span class="code-comentario-largo">"manzanas"</span> <br>
+                <span class="code-comentario-una">
+      
+                  #asigno el mismo valor a múltiples variables <br>
+                </span>
+                variable3, variable4 = <span class="code-builtin">True</span>
+              </code>
+            </div>
+            <p>Cuando se le asigna un valor a una variable, automáticamente el lenguaje detecta el tipo de dato y declara la variable como tal,
+              por lo que no se necesita declarar el tipo de variable e incluso puede cambiar el tipo después de haber sido creada.</p>
+            <p>Para conocer el tipo de variable, se puede usar la función built-in type()</p>
+            <div>
+      
+              <code><span id="code-if">if</span><span class="code-tipo">
+      
+                  type</span>(variable0) <span class="code-builtin">is</span> <span class="code-tipo">int</span>:<br>
+                <span class="code-func">print</span>(<span class="code-comentario-largo">'Es un entero.'</span>)
+              </code>
+            </div>
+            <p>Salida:</p>
+            <div>
+      
+              <code>Es un entero.</code>
+            </div>
+          </article>
+        </section>
+      
+        <section class="main-section" id="Operadores">
+          <header>Operadores</header>
+          <article>
+            <p>Aparte de las funciones incorporadas, los operadores usados para hacer operaciones sobre variables y valores son:</p>
+            <ul>
+              <li>Aritméticos: usados con valores numéricos para hacer operaciones matemáticas comunes, también para concatenar texto.</li>
+              <li>De asignación: para asignar valores a variables.</li>
+              <li>De comparación: para comparar valores.</li>
+              <li>Lógicos: para combinar oraciones condicionales.</li>
+              <li>De identidad: para comparar objetos, no si son iguales, sino si son de hecho el mismo objeto, con el mismo lugar en la memoria.</li>
+              <li>De pertenencia: para comprobar si una secuencia está presente en un objeto.</li>
+              <li>Bit a bit: para comparar números binarios.</li>
+            </ul>
+          </article>
+        </section>
+      
+      </main>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

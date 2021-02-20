@@ -1,0 +1,81 @@
+html {
+    font-size: 10px;
+    display: grid;
+    height: 100%;
+  }
+
+body {
+  background-color: #EFEDE9;
+  overflow-x: hidden;
+}
+  
+  #main {
+    font-family: 'PT Serif', serif;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 11%;
+    border: solid black; 
+  }
+  #img-div {
+    width: 100%;
+    height: auto;
+    position: center;
+  }
+  #title {
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 1.5rem;
+    background-color: rgba(45, 45, 45, 0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  #tribute-info {
+    margin: auto;
+    width: 93%;   
+}
+
+  p {
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 3rem;
+  }
+  #tribute-link {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  #link {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  #img-caption {
+    font-size: 1.85rem;
+    text-align: center;
+    margin: 1.5rem;
+    color: #4D4D4D;
+  }
+  
+  a:visited {
+    color: #585858;
+  }
+  
+  a:hover {
+    color: green;
+  }
+  
+  a:active {
+    color: yellow;
+  }
+  
